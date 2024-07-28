@@ -8,6 +8,16 @@ namespace EventBusSample.Managers
         {
             Application.targetFrameRate = 60;
         }
+
+        public static void Play()
+        {
+            Debug.Log("<color=green>Play</color>");
+        }
+
+        public static void Stop()
+        {
+            Debug.Log("<color=red>Stop</color>");
+        }
     }    
 }
 
