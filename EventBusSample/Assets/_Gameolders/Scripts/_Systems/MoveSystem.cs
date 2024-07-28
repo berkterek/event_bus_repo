@@ -23,6 +23,7 @@ namespace EventBusSample.Systems
         }
 
         [BurstCompile]
+        [WithDisabled(typeof(DeactivateTag))]
         private partial struct MoveJob : IJobEntity
         {
             public float DeltaTime;

@@ -27,6 +27,7 @@ namespace EventBusSample.Systems
         }
 
         [BurstCompile]
+        [WithDisabled(typeof(DeactivateTag))]
         private partial struct EnemySpawnJob : IJobEntity
         {
             public float DeltaTime;

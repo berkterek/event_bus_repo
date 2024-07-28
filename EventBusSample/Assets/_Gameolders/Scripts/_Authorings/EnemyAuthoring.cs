@@ -13,6 +13,7 @@ namespace EventBusSample.Authorings
                 var entity = GetEntity(TransformUsageFlags.Dynamic);
                 
                 AddComponent<ActiveTag>(entity);
+                AddComponent<DeactivateTag>(entity);
                 AddComponent<EnemyTag>(entity);
                 AddComponent<MoveData>(entity, new()
                 {

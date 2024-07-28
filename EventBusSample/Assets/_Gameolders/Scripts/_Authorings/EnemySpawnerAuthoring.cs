@@ -16,6 +16,7 @@ namespace EventBusSample.Authorings
                 var entity = GetEntity(TransformUsageFlags.None);
                 
                 AddComponent<ActiveTag>(entity);
+                AddComponent<DeactivateTag>(entity);
                 AddComponent<EnemySpawnerTag>(entity);
                 
                 AddComponent<SpawnerData>(entity, new()
