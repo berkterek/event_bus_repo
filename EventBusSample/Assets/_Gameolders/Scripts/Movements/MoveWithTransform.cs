@@ -17,9 +17,6 @@ namespace EventBusSample.Movements
 
         public void Tick(Vector2 direction)
         {
-            if (direction.magnitude <= 0) return;
-            
-            Debug.Log("Tick");
             _movement = Time.deltaTime * _speed * direction;
         }
 

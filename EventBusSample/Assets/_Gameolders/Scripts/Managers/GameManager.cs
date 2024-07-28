@@ -1,3 +1,4 @@
+using EventBusSample.EventBuses;
 using UnityEngine;
 
 namespace EventBusSample.Managers
@@ -12,11 +13,13 @@ namespace EventBusSample.Managers
         public static void Play()
         {
             Debug.Log("<color=green>Play</color>");
+            EventBus<PlayStateEvent>.Raise(new PlayStateEvent());
         }
 
         public static void Stop()
         {
             Debug.Log("<color=red>Stop</color>");
+            EventBus<StopStateEvent>.Raise(new StopStateEvent());
         }
     }    
 }
